@@ -1,19 +1,34 @@
 <nav class="flex justify-between items-center p-4 bg-gray-900">
   <div class="flex gap-6">
     <a
-      class={`text-xs uppercase font-semibold ${Astro.url.pathname === '/' ? 'underline' : ''} underline-offset-2`}
+      class={`text-xs uppercase font-semibold ${
+        Astro.url.pathname === "/" ? "underline" : ""
+      } underline-offset-2`}
       href="/">Hello</a
     >
     <a
-      class={`text-xs uppercase font-semibold ${Astro.url.pathname === '/about' || Astro.url.pathname === '/about/' ? 'underline' : ''} underline-offset-2`}
+      class={`text-xs uppercase font-semibold ${
+        Astro.url.pathname === "/about" || Astro.url.pathname === "/about/"
+          ? "underline"
+          : ""
+      } underline-offset-2`}
       href="/about">Want to know me</a
     >
     <a
-      class={`text-xs uppercase font-semibold ${Astro.url.pathname === '/projects' || Astro.url.pathname === '/projects/' ? 'underline' : ''} underline-offset-2`}
+      class={`text-xs uppercase font-semibold ${
+        Astro.url.pathname === "/projects" ||
+        Astro.url.pathname === "/projects/"
+          ? "underline"
+          : ""
+      } underline-offset-2`}
       href="/projects">What I do</a
     >
     <a
-      class={`text-xs uppercase font-semibold ${Astro.url.pathname === '/contact' || Astro.url.pathname === '/contact/' ? 'underline' : ''} underline-offset-2`}
+      class={`text-xs uppercase font-semibold ${
+        Astro.url.pathname === "/contact" || Astro.url.pathname === "/contact/"
+          ? "underline"
+          : ""
+      } underline-offset-2`}
       href="/contact">Can I call you</a
     >
   </div>
