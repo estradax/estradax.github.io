@@ -1,5 +1,5 @@
 ---
-import Navigation from "@components/Navigation.astro";
+import Navigation from "@components/Navigation.tsx";
 
 type Props = {
   title: string;
@@ -16,7 +16,7 @@ type Props = {
   <body
     class="grid grid-rows-[auto_1fr] w-screen h-screen bg-gray-800 text-white"
   >
-    <Navigation />
+    <Navigation client:load pathname={Astro.url.pathname} />
     <slot />
   </body>
 </html>
