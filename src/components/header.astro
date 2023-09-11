@@ -2,22 +2,21 @@
 import HeaderBanner from '@components/header-banner.astro';
 ---
 
+<style>
+.logo {
+  display: flex;
+  align-items: center;
+}
+</style>
+
 <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
   <div id="header" class="nav-collapse">
       <div class="row clearfix">
           <div class="col-1">
 
               <!--Logo-->
-              <div id="logo">
-
-                  <!--Logo that is shown on the banner-->
-                  <img src="images/logo.png" id="banner-logo" alt="Landing Page"/>
-                  <!--End of Banner Logo-->
-
-                  <!--The Logo that is shown on the sticky Navigation Bar-->
-                  <img src="images/logo-2.png" id="navigation-logo" alt="Landing Page"/>
-                  <!--End of Navigation Logo-->
-
+              <div id="logo" class="logo">
+                  <h1>estradax</h1>
               </div>
               <!--End of Logo-->
 
